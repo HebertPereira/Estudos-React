@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "bootswatch": "^4.4.1",
-    "react-router-dom": "^5.1.2"
-  }
-}
