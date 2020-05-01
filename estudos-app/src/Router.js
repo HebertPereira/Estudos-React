@@ -1,8 +1,7 @@
 import React from 'react';
 import Home from './view/home';
-import Login from './view/Login';
-
 import { Switch, Route, HashRouter, BrowserRouter } from 'react-router-dom'
+import loginScreen from './view/Login';
 
 
 export default () => {
@@ -10,7 +9,7 @@ export default () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path='/' component={Home}/>
-                <Route exact path='/Login' componet={Login}/>
+                <Route exact path='/Login' component={loginScreen}/>
             </Switch>
         </BrowserRouter>
     )
