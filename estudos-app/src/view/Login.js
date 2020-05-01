@@ -6,7 +6,7 @@ function loginScreen() {
             <input type="text">Name</input>
             <inpur type="password">Password</inpur>
             <input type="submit">Send</input>
-        </form>
+        </form> 
     )
 }
 
