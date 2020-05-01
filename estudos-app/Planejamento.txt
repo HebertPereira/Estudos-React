@@ -1,0 +1,28 @@
+-->Login
+User:
+Senha:
+
+Criar novo usuario(Link)
+
+-->Pag inicial
+Lista interativa com materias
+ex :
+	>Português -
+		- Atividade 1						8.75 - 80%
+		- Atividade 2						9,3  - 70%
+		- Atividade 3						3,0  - 50%
+		- Prova 1°Sem.						15,2 - 66%
+		<========================================------------------------>
+				Aproveitamento parcial - 66%
+
+	>Matemática -
+		- Atividade 1						8.75 - 80%
+		- Atividade 2						9,3  - 70%
+		- Atividade 3						3,0  - 50%
+		- Prova 1°Sem.						15,2 - 66%
+		<========================================------------------------>
+				Aproveitamento parcial - 66%
+
+----------------------------------------===/==/===----------------------------------------------------------------
+		<====================================================------------>
+				Aproveitamento total - 80%

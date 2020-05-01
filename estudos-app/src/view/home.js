@@ -6,7 +6,7 @@ function Home() {
         <div className="jumbotron">
             <h1 className="display-3">Bem vindo!</h1>
             <p className="lead">
-                Este é seu sistema, utilize a barra de navegação para acessar as páginas
+                Este é seu sistema, utilize o botão login para entrar e gerenciar seus estudos. =)
             </p>
             <hr className="my-4" />
             <p className="lead">
