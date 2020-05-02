@@ -1,17 +1,16 @@
 import React from 'react';
 import Home from './view/home';
-import LoginScreen from './view/login';
-
-import { Switch, Route, HashRouter } from 'react-router-dom'
-import UserPage from './view/userPage';
+import { Switch, Route, HashRouter, BrowserRouter } from 'react-router-dom'
+import loginScreen from './view/Login';
 
 
 export default () => {
     return (
-        <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route exact path='/Login' component={LoginScreen}/>
-            <Route exact path='/UserPage' component={UserPage}/>
-        </Switch>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route exact path='/Login' component={loginScreen}/>
+            </Switch>
+        </BrowserRouter>
     )
 }
