@@ -1,6 +1,6 @@
 import React from 'react';
 
-function loginScreen() {
+function LoginScreen() {
     return (
         <form>
             <input type="text">Name</input>
@@ -10,4 +10,4 @@ function loginScreen() {
     )
 }
 
-export default loginScreen;
+export default LoginScreen;
