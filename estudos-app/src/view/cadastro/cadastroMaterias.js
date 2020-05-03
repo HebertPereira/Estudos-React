@@ -7,32 +7,33 @@ const estadoInicial = {
     sucesso: null
 }
 
-export default class CadastraMateria extends React.Component {
+export default class Cadastradisciplina extends React.Component {
     state = estadoInicial;
-    //constructor() {
-       // super()
-        //this.service = new EstudoService;
+    constructor() {
+        super()
+        this.service = new EstudoService();
      
-    //}
+    }
 
     onChange = (event) => {
         const valor = event.target.value
         this.setState({materia : valor})
-        console.log(this.state.materia)
+        console.log(this.state.disciplina)
         
     }
 
     onSubmit = (event) => {
-         const materia = { nomeMateria: this.state.materia}
+         const disciplina = this.state.materia
 
          try{
-             if(this.state.materia != null){
-                console.log(materia)
+             if(disciplina != null){
                 this.setState({sucesso: true})
+                console.log(this.state)
+                this.service.cadastroDisciplinas(disciplina)
              }
             
          }catch(erro){
-            alert("Não foi possivel realizar o processo devido a um erro interno. Tente novamente mais tarde.")
+            //alert("Não foi possivel realizar o processo devido a um erro interno. Tente novamente mais tarde.")
 
          }
     }
@@ -42,17 +43,17 @@ export default class CadastraMateria extends React.Component {
             <>
                 <div className="card">
                     <div className="card-header">
-                        Cadastrar nova materia
+                        Cadastrar nova disciplina
                     </div>
                     <div className="card-body">
                         <div className="row">
-                            <h6>Materia:</h6>
+                            <h6>disciplina:</h6>
                             <div className="col-md-10">
                                 <div className="form-group">
-                                    <input onChange={this.onChange} placeholder="Digite o nome da materia" type="text" name="materia" className="form-control"/>
+                                    <input onChange={this.onChange} placeholder="Digite o nome da disciplina" type="text" name="disciplina" className="form-control"/>
                                 </div>
                             </div>
-                            <div className="col-md-2">
+                            <div className="col-md-1">
                                 <div className="form-group">
                                     <button className="btn-success" style={{width: "140px", height: "40px", fontSize: "20px", bottom:"1px" }} onClick={this.onSubmit}>Adcionar</button>
                                 </div>
