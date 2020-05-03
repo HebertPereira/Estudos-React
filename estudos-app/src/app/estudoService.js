@@ -4,6 +4,8 @@ export default class EstudoService{
         if(this.materia === true){
             
         }
-        else
+        else{
+            
+        }
     }
 }
